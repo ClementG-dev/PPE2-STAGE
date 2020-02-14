@@ -30,7 +30,7 @@ CREATE TABLE entreprises
 (
     id_entreprise SERIAL PRIMARY KEY,
     nom_entreprise VARCHAR(30),
-    adresse VARCHAR(50),
+    adresse VARCHAR(50)
 )
 
 CREATE TABLE stages

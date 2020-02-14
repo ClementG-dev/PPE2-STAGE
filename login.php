@@ -2,7 +2,7 @@
 <?php session_start(); ?>
 <html lang="fr">
   <head>
-    <title>SIO Bank - Connexion</title>
+    <title>FLD Gestion de stage - Connexion</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
     <div class="container" >
       <div class="row justify-content-md-center">
         <div class="col-md-6 login">
-          <h2 id="conntitle" class="maint-title" >SIO Bank</h2>
+          <h2 id="conntitle" class="maint-title" >FLD Gestion de stage</h2>
           <div class="card">
             <div class="card-body">
               <form method="post">
@@ -36,7 +36,7 @@
                 <div class="form-group">
                   <div class="form-check">
                     <div class="inscription" >
-                      <p>Pas de compte ? <a href="inscription.php" >Inscription</a></p>
+                      <p></p>
                     </div>
                   </div>
                 </div>
