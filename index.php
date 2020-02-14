@@ -34,16 +34,31 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Entreprises</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Ajouter une entreprise</a>
+            <a class="dropdown-item" href="#">Ajouter une entreprise</a>
+            <a class="dropdown-item" href="#">Liste entreprise</a>
         </div>
       </li>
-    </ul>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Etudiant</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Ajouter étudiant</a>
+            <a class="dropdown-item" href="#">Modifier étudiant</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stage <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Visite <span class="sr-only">(current)</span></a>
+      </li>
+    </ul> 
     <div class="form-inline mt-2 mt-md-0">
-      <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">Profil <span class="sr-only">(current)</span></a>
     </div>
   </div>
-</nav>
-
+    </nav>
+  </body>
 <main role="main" class="container">
   <div class="jumbotron">
     <h1>Il vous reste 36 Jours avant de trouver un stage</h1>

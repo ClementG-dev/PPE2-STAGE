@@ -1,3 +1,16 @@
 .nav-link{
-color: #f6b605;
+color: rgba(255,255,255,.5);
+}
+.nav-link2{
+	color: white;
+}
+.cards{
+	padding-left;
+}
+.div#avatar {
+  background-image: url(image.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 103px;
+  padding: 0;
 }
