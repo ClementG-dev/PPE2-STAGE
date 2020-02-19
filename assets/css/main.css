@@ -1,16 +1,21 @@
 .nav-link{
 color: rgba(255,255,255,.5);
 }
-.form-inline .nav-link{
-color: rgba(255,255,255,.5);
+.nav-link2{
+	color: white;
 }
-.cards{
-	padding-left;
+
+.etu{
+  margin-bottom: 10px;;
 }
-.div#avatar {
-  background-image: url(image.png);
-  background-repeat: no-repeat;
-  width: 80px;
-  height: 103px;
-  padding: 0;
+
+.pagination {
+
+  margin-top: 10px;
+
+}
+
+.photo_entreprise {
+  height: 40%;
+  width: 40%;
 }
