@@ -40,9 +40,11 @@ function creerEtudiant($email, $nom, $prenom){
     $random4 = rand(0,6);
     $mdp = $mdp . $Special[$random4];
 
+    $mdp_hashed_etudiant = password_hash($mdp, PASSWORD_DEFAULT);
+
     $bdd = connectionDB();
     
-    $req_etudiant = $bdd->prepare('INSERT INTO etudiants (nom_etudiant, prenom_etudiant, email_etudiant, mdp_etudiant) VALUES (?,?,?,?);');
+    $req_etudiant = $bdd->prepare('INSERT INTO etudiants (nom_etudiant, prenom_etudiant, email_etudiant, mdp_hashed_etudiant) VALUES (?,?,?,?);');
     $req_etudiant_exe = $req_etudiant ->execute(array(
         $nom,
         $prenom,
