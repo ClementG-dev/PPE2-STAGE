@@ -1,0 +1,16 @@
+.nav-link{
+color: rgba(255,255,255,.5);
+}
+.form-inline .nav-link{
+color: rgba(255,255,255,.5);
+}
+.cards{
+	padding-left;
+}
+.div#avatar {
+  background-image: url(image.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 103px;
+  padding: 0;
+}
