@@ -34,13 +34,13 @@ if ($_SESSION['email'] == "" ){
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="main.php">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?php echo(BASE_URL) ?>/pages/main.php">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="mesinfos.php">Mes informations</a>
+                        <a class="nav-link" href="<?php echo(BASE_URL) ?>/pages/mesinfos.php">Mes informations</a>
                     </li>
                 </ul>
-              <span class="navbar-text" ><a href="deconnexion.php" >
+              <span class="navbar-text" ><a href="<?php echo(BASE_URL) ?>/pages/deconnexion.php" >
             Déconnexion
             </a></span>
         </div>
