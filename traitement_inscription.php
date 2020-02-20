@@ -74,15 +74,6 @@ try {
     exit;
 }
 
-$_SESSION["nom"] = $nom;
-$_SESSION["prenom"]= $prenom;
-$_SESSION["email"] = $email;
-$_SESSION["sexe"] = $sexe;
-$_SESSION["adresse"] = $adresse;
-$_SESSION["ville"] = $ville;
-$_SESSION["code_pos"] = $code_pos;
-$_SESSION["date_naissance"] = $date_naissance;
-$_SESSION["num_tel"] = $num_tel;
 
 header("Location: index.php");
 
