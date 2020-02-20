@@ -34,15 +34,16 @@
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Entreprises</a>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Ajouter une entreprise</a>
-            <a class="dropdown-item" href="#">Liste entreprise</a>
+            <a class="dropdown-item" href="ajouter_entreprise.php">Ajouter une entreprise</a>
+            <a class="dropdown-item" href="liste_entreprise.php">Liste entreprise</a>
         </div>
       </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Etudiant</a>
         <div class="dropdown-menu">
             <a class="dropdown-item" href="ajouter_etudiant.php">Ajouter étudiant</a>
-            <a class="dropdown-item" href="#">Modifier étudiant</a>
+            <a class="dropdown-item" href="modifier">Modifier étudiant</a>
+            <a class="dropdown-item" href="liste_etudiant.php">Liste étudiant</a>
         </div>
       </li>
 
