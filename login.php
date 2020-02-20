@@ -22,7 +22,7 @@
           <h2 id="conntitle" class="maint-title" >SIO Bank</h2>
           <div class="card">
             <div class="card-body">
-              <form method="post">
+              <form method="post" action="traitement_login.php" >
                 <div class="form-row-col">
                     <div class="form-group col-md-">
                       <label for="inputEmail">Email</label>
