@@ -7,7 +7,6 @@ CREATE TABLE etudiants
     specialite_eleve VARCHAR(20)
 );
 
-
 CREATE TABLE professeurs
 (
     id_professeurs SERIAL PRIMARY KEY,
