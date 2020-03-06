@@ -1,4 +1,4 @@
-<?php include("head.php"); ?>
+<?php include('head.php'); ?>
 
     </nav>
   </body>
@@ -18,6 +18,4 @@
   </div>
 </div>
 </main>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-</html>
+<?php include(BASE_PATH . '/footer.php'); ?>

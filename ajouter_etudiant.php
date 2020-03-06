@@ -1,4 +1,4 @@
-<?php include('../head.php'); ?>
+<?php include('head.php'); ?>
           <div class="container-fluid">
             <div class="row" >
               <div class="col-sm" >
@@ -6,7 +6,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Ajouter un étudiant</h5>
                     <p class="card-text">Entrez l'adresse mail de l'étudiant, ce dernier recevera un email avec un mot de passe generé aleatoirement </p>
-                    <form method="POST" action="ajouter_etudiant.php" >
+                    <form method="POST" action="<?php echo(BASE_PATH) ?>/ajouter_etudiant.php">
                       <div class="row">
                           <div class="col">
                             <input type="mail" class="form-control etu" name="mail" placeholder="Email" requierd>
@@ -33,4 +33,4 @@
 
       }
     ?>
-<?php include(BASE_PATH.'/skeleton/footer.php'); ?>
+<?php include(BASE_PATH . '/footer.php'); ?>

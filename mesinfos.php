@@ -40,7 +40,7 @@ if ($_SESSION['email'] == "" ){
                         <a class="nav-link" href="<?php echo(BASE_URL) ?>/pages/mesinfos.php">Mes informations</a>
                     </li>
                 </ul>
-              <span class="navbar-text" ><a href="<?php echo(BASE_URL) ?>/pages/deconnexion.php" >
+              <span class="navbar-text" ><a href="<?php echo(BASE_URL) ?>/deconnexion.php" >
             Déconnexion
             </a></span>
         </div>

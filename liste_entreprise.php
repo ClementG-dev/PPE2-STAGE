@@ -1,4 +1,4 @@
-<?php include('../head.php'); ?>
+<?php include('head.php'); ?>
 <div class="container-fluid" >
 
   <div class="custom-control custom-switch">
@@ -168,4 +168,4 @@
     }
   </script>
 
-<?php include(BASE_PATH.'/skeleton/footer.php'); ?>
+<?php include(BASE_PATH . '/footer.php'); ?>

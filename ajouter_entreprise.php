@@ -1,4 +1,5 @@
-<?php include('../head.php'); ?>
+<?php include('head.php'); ?>
+
 <div class="container-fluid">
     <div class="row" >
         <div class="col-sm" >
@@ -22,4 +23,4 @@
         </div>
     </div>
 </div>
-<?php include(BASE_PATH.'/skeleton/footer.php'); ?>
+<?php include(BASE_PATH . '/footer.php'); ?>

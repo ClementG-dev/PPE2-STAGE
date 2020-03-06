@@ -6,21 +6,21 @@
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="<?php echo(BASE_URL) ?>/">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Entreprises</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/pages/ajouter_entreprise.php">Ajouter une entreprise</a>
-                    <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/pages/liste_entreprise.php">Liste entreprise</a>
+                    <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/ajouter_entreprise.php">Ajouter une entreprise</a>
+                    <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/liste_entreprise.php">Liste entreprise</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Etudiant</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/pages/ajouter_etudiant.php">Ajouter étudiant</a>
-                    <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/pages/modifier_etudiant.php">Modifier étudiant</a>
+                    <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/ajouter_etudiant.php">Ajouter étudiant</a>
+                    <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/modifier_etudiant.php">Modifier étudiant</a>
                     <a class="dropdown-item" href="<?php echo(BASE_URL) ?>/pages/liste_etudiant.php">Liste étudiant</a>
                 </div>
             </li>
@@ -32,7 +32,7 @@
             </li>
         </ul>
         <div class="form-inline mt-2 mt-md-0">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo(BASE_URL) ?>/pages/profil.php" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo(BASE_URL) ?>/profil.php" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#"></a>
                 <a class="dropdown-item" href="#"></a>

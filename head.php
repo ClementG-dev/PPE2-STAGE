@@ -23,7 +23,7 @@
 
 define("BASE_PATH", __DIR__);
 define("BASE_URL", '/PPE2-STAGE');
-include(__DIR__.'/skeleton/header.php');
+include(__DIR__ . '/header.php');
 
 ?>
 <body>

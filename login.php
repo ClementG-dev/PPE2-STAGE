@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets\css\main.css">
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
           <h2 id="conntitle" class="maint-title" >SIO Bank</h2>
           <div class="card">
             <div class="card-body">
-              <form method="post" action="../traitement_login.php" >
+              <form method="post" action="traitement_login.php" >
                 <div class="form-row-col">
                     <div class="form-group col-md-">
                       <label for="inputEmail">Email</label>
@@ -47,7 +47,7 @@
         </div> 
       </div>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>  
 </html>
 
