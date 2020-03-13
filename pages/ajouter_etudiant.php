@@ -10,8 +10,8 @@
                       <div class="row">
                           <div class="col">
                             <input type="mail" class="form-control etu" name="mail" placeholder="Email" requierd>
-                            <input type="text" class="form-control etu" name="prenom" placeholder="Prénom">
-                            <input type="text" class="form-control etu" name="nom" placeholder="Nom">
+                            <input type="text" class="form-control etu" name="prenom" placeholder="Prénom" >
+                            <input type="text" class="form-control etu" name="nom" placeholder="Nom" >
                           </div>
                         </div>
                         <input class="btn btn-primary addEtudiant" type="submit" ></input>
@@ -24,13 +24,14 @@
           </div>
 
     <?php
-      if(isset($_POST['mail'])){
-
+      if($_POST['mail']){
+        
         include "fonctions.php";
         creerEtudiant($_POST['mail'], $_POST['nom'], $_POST['prenom']);
 
-        unset($_POST['mail'], $_POST['nom'], $_POST['prenom']);
-
+      }else{
+        
       }
+      unset($_POST['mail']);
     ?>
 <?php include(BASE_PATH.'/skeleton/footer.php'); ?>
