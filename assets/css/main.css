@@ -19,3 +19,11 @@ color: rgba(255,255,255,.5);
   height: 40%;
   width: 40%;
 }
+
+#conntitle {
+  text-align: center;
+}
+
+.groupe-entre{
+  display: flex;
+}

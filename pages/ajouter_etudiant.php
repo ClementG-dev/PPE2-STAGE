@@ -1,7 +1,8 @@
 <?php include('../head.php'); ?>
           <div class="container-fluid">
             <div class="row" >
-              <div class="col-sm" >
+              <div class="col-4"></div>
+              <div class="col-4" >
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">Ajouter un étudiant</h5>
@@ -22,6 +23,7 @@
               </div>
             </div>
           </div>
+        </div>
 
     <?php
       if($_POST['mail']){

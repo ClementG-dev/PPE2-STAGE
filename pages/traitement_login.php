@@ -1,38 +1,33 @@
 <?php
 
-session_start(); // demarage de la session
+// demarage de la session
+session_start();
 
-include "fonctions.php"; // appelle du fichier avec les fonctions
-$bdd = new PDO('mysql:host=localhost;dbname=ppe2stage;charset=utf8', 'root', ''); // connection a la db
+// appelle du fichier avec les fonctions
+include "fonctions.php";
+$bdd = connectionDB();
 
 // Recuperation du form
 $email = $_POST['email'];
 
-if ($_POST['mdp']){   // si le mdp n'est pas indiqué
-}else{
-    //erreur(3,"login.php");
-}
-
-if ($email){ // si l'email n'est pas indiqué
-}else{
-    //erreur(2,"login.php");
-}
-//E8QM8TCx* studio.craft24@gmail.com
 // recuperation des infos de l'utilisateur en fonction de l'email
-$reponseEleve = $bdd->query("SELECT mdp_hashed_etudiant FROM etudiants WHERE email_etudiant='".$email."'");
+$reponseEleve = $bdd->query("SELECT mdp_etudiant FROM etudiants WHERE email_etudiant='".$email."'");
 $mdpBddEleve = $reponseEleve->fetch();
 $reponseEleve->closeCursor();
 
-echo("bdd -> " . $mdpBddEleve['mdp_hashed_etudiant'] ."</br>");
+echo("bdd -> " . $mdpBddEleve['mdp_etudiant'] ."</br>");
 echo("form -> " . $_POST['mdp'] ."</br>");
 
-if ($mdpBddEleve['mdp_hashed_etudiant']){ // si l'email est dans la base de données alors on connecte l'eleve
 
-    if( password_verify($_POST['mdp'], $mdpBddEleve['mdp_hashed_etudiant']) )
-    { // verification du mot de passe 
+// si l'email est dans la base de données alors on connecte l'eleve
+if ($mdpBddEleve['mdp_etudiant']){
+
+    // verification du mot de passe 
+    if( password_verify($_POST['mdp'], $mdpBddEleve['mdp_etudiant']) )
+    {
 
         echo("tes co");// acces au site + initialisation session
-        $allDonnes = $bdd->query("SELECT * FROM etudiants WHERE email_etudiant='".$email."' AND mdp_hashed_etudiant='". $mdpBddEleve['mdp_hashed_etudiant'] ."'");
+        $allDonnes = $bdd->query("SELECT * FROM etudiants WHERE email_etudiant='".$email."' AND mdp_etudiant ='". $mdpBddEleve['mdp_etudiant'] ."'");
         $donnees = $allDonnes->fetch();
         
         $_SESSION["nom"] = $donnees['nom_etudiant'];
@@ -40,29 +35,45 @@ if ($mdpBddEleve['mdp_hashed_etudiant']){ // si l'email est dans la base de donn
         $_SESSION["numTel"] = $donnees['numeroTel_etudiant'];
         $_SESSION["email"] = $donnees['email_etudiant'];
         $_SESSION["specialite"] = $donnees['specialite_etudiant'];
+        $_SESSION["id"] = $donnees['id_etudiant']; 
+        $_SESSION["role"] = "etudiant";
 
-
-        //header("Location: index.php");
-        echo("t'es co");
+        //echo("\n".$_SESSION["id"]);
+        header("Location: ../index.php");
     }
 
 }else{
 
-    // on cherche dans la table proffesseur
-    $reponseProf = $bdd->query("SELECT mpd_proffeseur FROM professeurs WHERE email_professeur='".$email."'");
+    // on cherche dans la table professeur
+    $reponseProf = $bdd->query("SELECT mdp_professeur FROM professeurs WHERE email_professeur='".$email."'");
     $mdpBddProf = $reponseProf->fetch();
     $reponseEleve->closeCursor();
 
-    if(password_verify($_POST['mdp'], $mdpBddProf)){ // verification du mot de passe 
+
+    echo("\n\n\n\n\n\n\n");
+    echo("bdd -> " . $mdpBddProf['mdp_professeur'] ."</br>");
+    echo("form -> " . $_POST['mdp'] ."</br>");
+
+    if(password_verify($_POST['mdp'], $mdpBddProf['mdp_professeur'])){ // verification du mot de passe 
 
         $allDonnes = $bdd->query("SELECT * FROM professeurs WHERE email_professeur='".$email."'");
         $donnees = $allDonnes->fetch();
-        
-        $_SESSION["nom"] = $donnees['nom_professeurs'];
 
-        //header("Location: index.php");
+        $_SESSION["nom"] = $donnees['nom_professeur'];
+        $_SESSION["prenom"] = $donnees['prenom_professeur'];
+        $_SESSION["email"] = $donnees['email_professeur'];
+        $_SESSION["numTel"] = $donnees['numeroTel_professeur'];
+        $_SESSION["specialite"] = $donnees['specialite_professeur'];
+        $_SESSION["role"] = "prof";
+        $_SESSION["id"] = $donnees['id_professeurs']; 
+
+        echo("tes co en prof");
+        header("Location: ../index.php");
     }
 }
+
+echo"Heu ya un bug la je crois, mauvais mdp je pense.";
+
 
 
 ?>

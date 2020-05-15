@@ -19,7 +19,7 @@
     <div class="container" >
       <div class="row justify-content-md-center">
         <div class="col-md-6 login">
-          <h2 id="conntitle" class="maint-title" >SIO Bank</h2>
+          <h2 id="conntitle" class="maint-title" >PPE2 STAGE SIO</h2>
           <div class="card">
             <div class="card-body">
               <form method="post" action="traitement_login.php" >
@@ -36,7 +36,7 @@
                 <div class="form-group">
                   <div class="form-check">
                     <div class="inscription" >
-                      <p>Pas de compte ? <a href="inscription.php" >Inscription</a></p>
+                      <p>Pas de compte ? Demandez à votre professeur principal</p>
                     </div>
                   </div>
                 </div>
